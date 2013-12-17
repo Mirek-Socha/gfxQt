@@ -2,6 +2,7 @@
 #define MYWIDGET_H
 
 #include <QWidget>
+#include <QPainter>
 
 class myWidget : public QWidget
 {
@@ -9,6 +10,8 @@ class myWidget : public QWidget
 public:
     explicit myWidget(QWidget *parent = 0);
     
+    void paintEvent(QPaintEvent *event);
+
 signals:
     
 public slots:
