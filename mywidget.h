@@ -3,6 +3,8 @@
 
 #include <QWidget>
 #include <QPainter>
+#include <QMouseEvent>
+#include <QDebug>
 
 class myWidget : public QWidget
 {
@@ -11,6 +13,7 @@ public:
     explicit myWidget(QWidget *parent = 0);
     
     void paintEvent(QPaintEvent *event);
+    void mousePressEvent(QMouseEvent *);
 
 signals:
     
