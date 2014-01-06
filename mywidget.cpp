@@ -11,7 +11,7 @@ void myWidget::paintEvent(QPaintEvent *)
     painter.setPen(Qt::blue);
     painter.fillRect(rect(),Qt::red);
     painter.setFont(QFont("Arial", 30));
-    painter.drawText(rect(), Qt::AlignCenter, "Qt");
+    painter.drawText(rect(), Qt::AlignCenter, "QWidget demo");
 }
 
 void myWidget::mousePressEvent(QMouseEvent *event)
